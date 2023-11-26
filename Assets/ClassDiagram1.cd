@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CameraController" Collapsed="true">
+    <Position X="1.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYAgAAgAiAAAAAAACAAQAAEAAAAEAAAAQAkAJEgAAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\CameraController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentController" Collapsed="true">
+    <Position X="13.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAQAAAAAAAAAAAAAAAgwAAAIAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\AgentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Agent" Collapsed="true">
+    <Position X="13.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgjAKABAAAAAQABAAAEEIQAAAAAAEAQAIAAKEAAKQE=</HashCode>
+      <FileName>Assets\Scripts\Controllers\AgentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Background" Collapsed="true">
+    <Position X="0.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAMA=</HashCode>
+      <FileName>Assets\Scripts\Background.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackgroundScaler" Collapsed="true">
+    <Position X="1" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\BackgroundScaler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BoundariesArea" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\BoundaryArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircleParticle" Collapsed="true">
+    <Position X="9" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYAAAAACCAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CircleParticle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvironmentController" Collapsed="true">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCEAAQAIgEAIQAAgAAAACAAAAAAAAEABIAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\EnvironmentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Globals" Collapsed="true">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAQAAAAAAAAABAAAAAgAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\Globals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseBoundaries2D" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFgAAACAAAAAAAAgAACAAAAAAFAAAAAAAAACAAIAEAA=</HashCode>
+      <FileName>Assets\Scripts\Globals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldBoundaries2D" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Globals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlaneBoundaries2D" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Globals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayPenBoundaries2D" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Globals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LineShaderController" Collapsed="true">
+    <Position X="2.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEwAEAAAQGAAAAgAAAAAKAABAAAEQAAAAAQABAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\LineShaderController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovementController" Collapsed="true">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAICAhgIQAQBA4EAAAAAAAAAAEAAAAIAgCAABAEA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\MovementController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuralNetworkManager" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQIAAAAAAAAAAABAAAACAQAAAAgAAAAAAAIBAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\NeuralNetworkController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NeuralNetwork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACASAAAAAAAAEAAACQQAAAAAAAAAAAAIAAAAAAABA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\NeuralNetworkController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MockNeuralNetwork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIACASAAAAAAAAEAAACQQAAAAAAAAAAAAIQAAAAAABA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\NeuralNetworkController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="SerializableNeuralNetwork" Collapsed="true">
+    <Position X="18.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\NeuralNetworkController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SerializableNeuralNetworkList" Collapsed="true">
+    <Position X="20.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\NeuralNetworkController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpawnController" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAAQBIACAAwAAAAgACAAAAIAAQAECAAEgEEBAAEA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\SpawnController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SquareCamera" Collapsed="true">
+    <Position X="1.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEA=</HashCode>
+      <FileName>Assets\Scripts\SquareCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldBoundariesArea" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\WorldBoundaryArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="INeuralNetwork" Collapsed="true">
+    <Position X="19.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAAAAAAEAAACAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\Scripts\Controllers\NeuralNetworkController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
