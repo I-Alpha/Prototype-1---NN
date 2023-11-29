@@ -11,14 +11,8 @@
     <Position X="13.5" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAQAAAAAAAAAAAAAAAgwAAAIAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\Controllers\AgentController.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Agent" Collapsed="true">
-    <Position X="13.5" Y="6" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgjAKABAAAAAQABAAAEEIQAAAAAAEAQAIAAKEAAKQE=</HashCode>
-      <FileName>Assets\Scripts\Controllers\AgentController.cs</FileName>
+      <FileName>Assets\Scripts\Controllers\AgentControllerOld - Copy.cs</FileName>
+      <NewMemberFileName>Assets\Scripts\Controllers\AgentController.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Background" Collapsed="true">
@@ -66,7 +60,7 @@
   <Class Name="BaseBoundaries2D" Collapsed="true">
     <Position X="3" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AFgAAACAAAAAAAAgAACAAAAAAFAAAAAAAAACAAIAEAA=</HashCode>
+      <HashCode>AFgAAACAAAAAAAAgAACAAAAAAFAAAAAAAAACAAIgEAA=</HashCode>
       <FileName>Assets\Scripts\Globals.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -161,6 +155,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
       <FileName>Assets\Scripts\WorldBoundaryArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Agent" Collapsed="true">
+    <Position X="13.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgjAKABAAAAAQABAAAEEIQAAAAAAEAQAIAAKEAAKQE=</HashCode>
+      <FileName>Assets\Scripts\Models\Agent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="INeuralNetwork" Collapsed="true">

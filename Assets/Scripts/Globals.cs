@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 public static class Globals
 {
@@ -49,8 +50,8 @@ public abstract class BaseBoundaries2D
 
     public Vector2 GetRandomPositionWithinBounds()
     {
-        return new Vector2(Random.Range( bounds.min.x,bounds.max.x),
-                                                                  Random.Range(bounds.min.y, bounds.max.y));
+        return new Vector2(UnityEngine.Random.Range( bounds.min.x,bounds.max.x),
+                                                                  UnityEngine.Random.Range(bounds.min.y, bounds.max.y));
     }
     public Vector2 ClampCameraPositionWithinBounds(Vector2 position, float size = 1.0f, float aspect = 1.0f)
     {
@@ -95,6 +96,12 @@ public abstract class BaseBoundaries2D
         float clampedY = Mathf.Clamp(obj.transform.position.y, bounds.min.y + objectSize.y / 2, bounds.max.y - objectSize.y / 2);
 
         return new Vector3(clampedX, clampedY, obj.transform.position.z);
+    }
+   public  float2 ClampPosition(float2 position)
+    {
+        var minBounds = new float2(bounds.min.x, bounds.min.y);
+        var maxBounds = new float2(bounds.max.x, bounds.max.y);
+        return math.clamp(position, minBounds, maxBounds);
     }
 
 }

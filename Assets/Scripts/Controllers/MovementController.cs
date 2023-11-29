@@ -18,7 +18,7 @@ public class MovementController : MonoBehaviour
     public Agent[] playerAgents;
     public PlayerConfig playerConfig;
 
-    private readonly Dictionary<GameObject, Identifier> identifierCache = new Dictionary<GameObject, Identifier>();
+    private readonly Dictionary<GameObject, IdentifierComponent> identifierCache = new Dictionary<GameObject, IdentifierComponent>();
 
     public void Initialize(AgentController agentController)
     {
@@ -43,10 +43,10 @@ public class MovementController : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, agentLayer);
             if (hit.collider != null)
             {
-                Identifier identifier = GetIdentifier(hit.collider.gameObject);
+                IdentifierComponent identifier = GetIdentifier(hit.collider.gameObject);
 
-                string agentId = identifier.Id; // Assuming the name is the agent ID
-                if (agentController.agents.TryGetValue(agentId, out Agent agent))
+                int agentId = identifier.id; // Assuming the name is the agent ID
+                if (agentController.agents.TryGetValue(agentId.ToString(), out Agent agent))
                 {
                     // Toggle manual control
                     agent.ToggleManualControl();
@@ -140,11 +140,11 @@ public class MovementController : MonoBehaviour
     }
 
 
-    private Identifier GetIdentifier(GameObject gameObject)
+    private IdentifierComponent GetIdentifier(GameObject gameObject)
     {
-        if (!identifierCache.TryGetValue(gameObject, out Identifier identifier))
+        if (!identifierCache.TryGetValue(gameObject, out IdentifierComponent identifier))
         {
-            identifier = gameObject.GetComponent<Identifier>();
+            identifier = gameObject.GetComponent<IdentifierComponent>();
             identifierCache[gameObject] = identifier;
         }
         return identifier;
