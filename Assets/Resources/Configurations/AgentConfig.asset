@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bdc017d7e79a34cb28bb022d9f6f6a, type: 3}
   m_Name: AgentConfig
   m_EditorClassIdentifier: 
-  speed: 10
-  rotationSpeed: 1
+  speed: 2
+  rotationSpeed: 0.1
   acceleration: 0
-  angularAcceleration: 30
-  angularVelocity: 30
+  angularAcceleration: 0.01
+  angularVelocity: 0
   maxSpeed: 1000
   maxRotationSpeed: 60
   maxAcceleration: 30

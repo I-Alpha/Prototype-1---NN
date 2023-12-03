@@ -22,5 +22,5 @@ MonoBehaviour:
   maxAcceleration: 0
   maxAngularAcceleration: 0
   maxAngularVelocity: 0
-  type: 0
+  type: 2
   boundaryType: 0

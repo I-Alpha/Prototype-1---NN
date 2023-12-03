@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3754507549554352550}
-  - component: {fileID: 7764991089836795161}
   - component: {fileID: 627495552904165312}
   - component: {fileID: 400866944435598490}
   - component: {fileID: 3843443093134448393}
+  - component: {fileID: 6922257516622451771}
   - component: {fileID: -843687712237759802}
   - component: {fileID: 7952285695427580069}
   m_Layer: 7
@@ -37,21 +37,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7764991089836795161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5174110339440390617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c1bc326845e6ef44be12d1788649d13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 1
-  bounceStrength: 1
-  velocity: {x: 0, y: 0}
 --- !u!212 &627495552904165312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -166,6 +151,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!114 &6922257516622451771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174110339440390617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68697b80dfab0d248aeb2e766e111167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 2
 --- !u!114 &-843687712237759802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 873861cf7c3ae8942b675c17063c95fd, type: 2}
-  type: 2
-  boundaryType: 1
 --- !u!114 &7952285695427580069
 MonoBehaviour:
   m_ObjectHideFlags: 0

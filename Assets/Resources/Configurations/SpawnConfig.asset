@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a4e374e259c5747b9627b2d33f4d6d, type: 3}
   m_Name: SpawnConfig
   m_EditorClassIdentifier: 
-  InitialAgentCount: 1000
-  InitialGoalCount: 12
-  SpawnInterval: 0.3
+  InitialAgentCount: 0
+  InitialGoalCount: 0
+  SpawnInterval: 0.2
   SpawnRadius: 0.1
-  RandomizeSpawnPosition: 1
-  Timer: 5
+  Timer: 0.3
+  IsDirty: 0
+  spawnerOn: 1
+  Reset: 0
+  RandomizeSpawnPosition: 0
