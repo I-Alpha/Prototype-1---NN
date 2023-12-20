@@ -1,36 +1,40 @@
 using UnityEngine;
 
-public class RuntimeObjectManager : MonoBehaviour
+namespace Borgs
 {
-    public static RuntimeObjectManager Instance;
 
-    private void Awake()
+    public class RuntimeObjectManager : MonoBehaviour
     {
-        // Ensure there is only one instance of this manager
-        if (Instance != null)
+        public static RuntimeObjectManager Instance;
+
+        private void Awake()
         {
-            Destroy(gameObject);
-            return;
+            // Ensure there is only one instance of this manager
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
+
+            // This ensures the manager persists across scene loads
+            DontDestroyOnLoad(gameObject);
         }
-        Instance = this;
 
-        // This ensures the manager persists across scene loads
-        DontDestroyOnLoad(gameObject);
-    }
-
-    // Function to call when creating a new GameObject
-    public GameObject CreateRuntimeGameObject(string name)
-    {
-        GameObject newObj = new GameObject(name);
-        return newObj;
-    }
-
-    private void OnDestroy()
-    {
-        // Destroy all GameObjects created at runtime
-        foreach (Transform child in transform)
+        // Function to call when creating a new GameObject
+        public GameObject CreateRuntimeGameObject(string name)
         {
-            Destroy(child.gameObject);
+            GameObject newObj = new GameObject(name);
+            return newObj;
+        }
+
+        private void OnDestroy()
+        {
+            // Destroy all GameObjects created at runtime
+            foreach (Transform child in transform)
+            {
+                Destroy(child.gameObject);
+            }
         }
     }
 }

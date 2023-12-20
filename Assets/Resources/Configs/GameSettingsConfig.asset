@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47431ba3f2bcf6d49bbef654ee310329, type: 3}
+  m_Name: GameSettingsConfig
+  m_EditorClassIdentifier: 
+  BorgBoundaryType: 0
+  MoveableObjectBoundaryType: 1
+  InitialBorgCount: 2000
+  InitialGoalCount: 0
+  SpawnInterval: 1
+  SpawnRadius: 0
+  SpawnSpeed: 3
+  SpawnBatchSize: 1
+  SpawnBatchSizeMax: 1000
+  borgPrefab: {fileID: 7128019153996368789, guid: 0326cb45f6e45db459457e0397cbb63e, type: 3}
+  goalPrefab: {fileID: 5174110339440390617, guid: a1b8d2ef5b063fb4bb6ac87504c843cf, type: 3}
+  spawnerOn: 1
+  Reset: 0
+  RandomizeSpawnPosition: 1
+  spawnAtOnce: 1
+  fixedStep: 1
+  fixedStepTime: 0.2

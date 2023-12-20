@@ -1,8 +1,11 @@
 ﻿using Unity.Entities;
 
-public partial class ColliderAuthoring
+namespace Borgs
 {
-    public struct BoxColliderComponent : IComponentData
+    public partial class ColliderAuthoring
     {
+        public struct BoxColliderComponent : IComponentData
+        {
+        }
     }
 }

@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using Unity.Entities;
-using UnityEngine;
 
-public struct IdentifierComponent : IComponentData
+using Unity.Entities;
+
+namespace Borgs
 {
-    public int id;
-    public ObjectType type;
-    public int index;
+    public struct IdentifierComponent : IComponentData
+    {
+        public int id;
+        public Entity entityRef;
+        public ObjectType type;
+        public int index;
+    }
 }

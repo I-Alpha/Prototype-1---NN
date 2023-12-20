@@ -1,20 +1,23 @@
 using UnityEngine;
 
-[ExecuteInEditMode]
-public class SquareCamera : MonoBehaviour
+namespace Borgs
 {
-    private Camera cameraComponent;
-
-    void Awake()
+    [ExecuteInEditMode]
+    public class SquareCamera : MonoBehaviour
     {
-        cameraComponent = GetComponent<Camera>();
-    }
+        private Camera cameraComponent;
 
-    void Update()
-    {
-        if (cameraComponent != null)
+        void Awake()
         {
-            cameraComponent.aspect = 1.0f; // Square aspect ratio
+            cameraComponent = GetComponent<Camera>();
+        }
+
+        void Update()
+        {
+            if (cameraComponent != null)
+            {
+                cameraComponent.aspect = 1.0f; // Square aspect ratio
+            }
         }
     }
 }

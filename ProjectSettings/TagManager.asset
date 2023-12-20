@@ -8,7 +8,7 @@ TagManager:
   - Foreground
   - Particle
   - Goal
-  - Agent
+  - Borg
   layers:
   - Default
   - TransparentFX
@@ -16,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - AgentLayer
+  - BorgLayer
   - GoalLayer
   - 
   - 

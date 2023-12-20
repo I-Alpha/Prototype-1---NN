@@ -6,8 +6,6 @@ namespace Borgs
 {
     public class Background : MonoBehaviour
     {
-
-
         void Awake()
         {
             CalculatePlaneBoundaries();

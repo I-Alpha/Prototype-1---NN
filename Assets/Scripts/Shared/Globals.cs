@@ -1,7 +1,8 @@
-using System.Collections.Generic;
-using Unity.Entities;
-using Unity.Mathematics;
 using UnityEngine;
+using NativeTrees;
+using Unity.Mathematics;
+using System.Collections.Generic;
+
 namespace Borgs
 {
     public static class Globals
@@ -38,6 +39,8 @@ namespace Borgs
         public Vector2 bottomRight;
         public Vector2 topRight;
 
+        public AABB2D aabb2D;
+
         public int cacheSize; // Adjust as needed
         public List<float2> randomPositionsCache;
 
@@ -50,8 +53,20 @@ namespace Borgs
             // Create a cache of random positions within the bounds
             CreateRandomPositionsCache();
 
+            // Calculate and store the new AABB2D
+            CalculateAndStoreAABB2D();
             isInitialized = true;
 
+        }
+        // New method to calculate and store AABB2D
+        private void CalculateAndStoreAABB2D()
+        {
+            aabb2D = new AABB2D(bottomLeft, topRight);
+            // Validate that the AABB2D is valid
+            if (!aabb2D.IsValid)
+            {
+                Debug.LogError("Invalid AABB2D created in BaseBoundaries2D.");
+            }
         }
 
         protected void UpdateCornerPoints()
@@ -116,24 +131,31 @@ namespace Borgs
         {
             cacheSize = 1000;
             randomPositionsCache = new List<float2>(cacheSize);
+
             for (int i = 0; i < cacheSize; i++)
             {
-                float2 randomPosition = new float2(
+                float2 randomPosition = new(
                     UnityEngine.Random.Range(bounds.min.x, bounds.max.x),
                     UnityEngine.Random.Range(bounds.min.y, bounds.max.y)
                 );
-                randomPositionsCache
-            .Add(randomPosition);
+
+                randomPositionsCache.Add(randomPosition);
             }
         }
 
-        public float2 GetRandomPositionFromCache()
+        public void GetRandomPositionFromCache(out float3 position)
         {
             int randomIndex = UnityEngine.Random.Range(0, cacheSize);
-            return randomPositionsCache[randomIndex];
+            position = new float3(randomPositionsCache[randomIndex].x, randomPositionsCache[randomIndex].y, 0);
+
         }
     }
-
+    public enum BoundaryType
+    {
+        World,
+        PlayPen,
+        None
+    }
     public class WorldBoundaries2D : BaseBoundaries2D
     {
         // Additional specific functionality for world boundaries can be added here.

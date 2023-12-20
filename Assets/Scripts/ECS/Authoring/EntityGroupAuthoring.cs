@@ -3,34 +3,37 @@ using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
 
-public class EntityGroupAuthoring : MonoBehaviour
+namespace Borgs
 {
-    public List<GameObject> entities = new List<GameObject>();
-    public string groupTag;
-}
-
-public class EntityGroupBaker : Baker<EntityGroupAuthoring>
-{
-    public override void Bake(EntityGroupAuthoring authoring)
+    public class EntityGroupAuthoring : MonoBehaviour
     {
-        Entity groupEntity = GetEntity(TransformUsageFlags.None);
-        var buffer = AddBuffer<EntityGroupBuffer>(groupEntity);
-
-        foreach (GameObject go in authoring.entities)
-        {
-            buffer.Add(new EntityGroupBuffer { Entity = GetEntity(go, TransformUsageFlags.Dynamic) });
-        }
-
-        AddComponent(groupEntity, new GroupTag { Tag = new FixedString64Bytes(authoring.groupTag) });
+        public List<GameObject> entities = new List<GameObject>();
+        public string groupTag;
     }
-}
 
-public struct EntityGroupBuffer : IBufferElementData
-{
-    public Entity Entity;
-}
+    public class EntityGroupBaker : Baker<EntityGroupAuthoring>
+    {
+        public override void Bake(EntityGroupAuthoring authoring)
+        {
+            Entity groupEntity = GetEntity(TransformUsageFlags.None);
+            var buffer = AddBuffer<EntityGroupBuffer>(groupEntity);
 
-public struct GroupTag : IComponentData
-{
-    public FixedString64Bytes Tag;
+            foreach (GameObject go in authoring.entities)
+            {
+                buffer.Add(new EntityGroupBuffer { Entity = GetEntity(go, TransformUsageFlags.Dynamic) });
+            }
+
+            AddComponent(groupEntity, new GroupTag { Tag = new FixedString64Bytes(authoring.groupTag) });
+        }
+    }
+
+    public struct EntityGroupBuffer : IBufferElementData
+    {
+        public Entity Entity;
+    }
+
+    public struct GroupTag : IComponentData
+    {
+        public FixedString64Bytes Tag;
+    }
 }
